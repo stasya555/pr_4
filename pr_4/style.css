@@ -3,8 +3,10 @@
 }
 
 
-
 .aside{
+    position: absolute;
+    left: -250px;
+    top: 0;
     min-width: 250px;
     width: 250px;
     height: 811px;
@@ -14,18 +16,23 @@
     gap: 10px;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(0px 0px 10px rgb(82, 143, 184));
+    transition: all 0.3s;
 }
 
-.header{
+.aside-active{
+    left: 0;
+    transition: all 0.3s;
+}
+
+.aside_header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-left: 10px;
 }
 
-.header_left{
+.aside_header_left{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -33,33 +40,41 @@
 }
 
 
-.buttons{
-    height: 35px;
-    width: 35px;
+.aside_buttons{
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background-color: #FF3E79;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.buttons img{
-    height: 17px;
+#open{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.aside_buttons img{
+    height: 20px;
     width: auto;
     align-items: center;
 }
 
-.buttons:active{
+.aside_buttons:active{
     cursor: pointer;
     transform: scale(0.96);
 }
-.buttons:hover {
+.aside_buttons:hover {
     background-color: #ffc9d9;
 }
 
-.buttons:disabled {
+.aside_buttons:disabled {
     background-color: #dfdfdf;
 }
 
-.buttons:disabled:hover {
+.aside_buttons:disabled:hover {
     animation: shakeX 1s; 
 }
 
@@ -68,14 +83,14 @@
     height: auto;
 }
 
-.header_right{
+.aside_header_right{
     align-items: center;
     gap: 5px;
 }
 
-.button{
-    height: 35px;
-    width: 35px;
+.aside_button{
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background-color: #FF3E79;
     border: none;
@@ -83,17 +98,17 @@
     
 }
 
-.button:active{
+.aside_button:active{
     cursor: pointer;
     transform: scale(0.96);
 }
 
-.button img{
-    height: 15px;
+.aside_button img{
+    height: 20px;
     width: auto;
 }
 
-.main{
+.aside_main{
     height: auto;
     display: grid;
     grid-template-columns: 15pc;
@@ -105,22 +120,21 @@
     gap: 10px;
 }
 
-.active:focus{
-    border-left: solid 2px #41f6d6;
+.active{
+    cursor: pointer;
 }
 
 .active:hover{
-    border-left: solid 2px #41f6d6;
-    padding-left: 15px;
-    cursor: pointer;
+    color: rgb(146, 146, 146);
 }
-.active:active{
+
+.active--active-link{
     border-left: solid 2px #41f6d6;
     padding-left: 15px;
     transform: scale(0.96);
 }
 
-.footer{
+.aside_footer{
     display: flex;
     flex-direction: column;
     margin-top: 200px;
@@ -128,25 +142,26 @@
     margin-left: 10px;
 }
 
-.footer p{
+.aside_footer p{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.footer p:hover{
+.aside_footer p:hover{
     color: #FF3E79;
 }
 
-.text{
+.aside_text{
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.text:hover{
+.aside_text:hover{
     color: #FF3E79;
 }
-.button_current{
+
+.aside_button_current{
     background-color: white;
     border: none;
     gap: 10px;
@@ -154,7 +169,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.button_current:hover {
+.aside_button_current:hover {
     color: #FF3E79;
 }
 
