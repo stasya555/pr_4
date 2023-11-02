@@ -24,7 +24,7 @@
     transition: all 0.3s;
 }
 
-.aside_header{
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,7 +32,7 @@
     padding: 10px;
 }
 
-.aside_header_left{
+.header_left{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,7 +40,7 @@
 }
 
 
-.aside_buttons{
+.buttons{
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -56,25 +56,25 @@
     margin-top: 15px;
 }
 
-.aside_buttons img{
+.buttons img{
     height: 20px;
     width: auto;
     align-items: center;
 }
 
-.aside_buttons:active{
+.buttons:active{
     cursor: pointer;
     transform: scale(0.96);
 }
-.aside_buttons:hover {
+.buttons:hover {
     background-color: #ffc9d9;
 }
 
-.aside_buttons:disabled {
+.buttons:disabled {
     background-color: #dfdfdf;
 }
 
-.aside_buttons:disabled:hover {
+.buttons:disabled:hover {
     animation: shakeX 1s; 
 }
 
@@ -83,12 +83,12 @@
     height: auto;
 }
 
-.aside_header_right{
+.header_right{
     align-items: center;
     gap: 5px;
 }
 
-.aside_button{
+.button{
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -98,17 +98,17 @@
     
 }
 
-.aside_button:active{
+.button:active{
     cursor: pointer;
     transform: scale(0.96);
 }
 
-.aside_button img{
+.button img{
     height: 20px;
     width: auto;
 }
 
-.aside_main{
+.main{
     height: auto;
     display: grid;
     grid-template-columns: 15pc;
@@ -134,7 +134,7 @@
     transform: scale(0.96);
 }
 
-.aside_footer{
+.footer{
     display: flex;
     flex-direction: column;
     margin-top: 200px;
@@ -142,26 +142,26 @@
     margin-left: 10px;
 }
 
-.aside_footer p{
+.footer p{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.aside_footer p:hover{
+.footer p:hover{
     color: #FF3E79;
 }
 
-.aside_text{
+.text{
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.aside_text:hover{
+.text:hover{
     color: #FF3E79;
 }
 
-.aside_button_current{
+.button_current{
     background-color: white;
     border: none;
     gap: 10px;
@@ -169,7 +169,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.aside_button_current:hover {
+.button_current:hover {
     color: #FF3E79;
 }
 
